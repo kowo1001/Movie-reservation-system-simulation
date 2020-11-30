@@ -19,6 +19,8 @@ INSERT ALL
     INTO THEATERALL VALUES('특별관',5,'닥터 스트레인지','15:20  17:00  20:30')
 SELECT * FROM DUAL;
 
+COMMIT;
+
 -- ### CUSTOMER ###
 
 DROP TABLE CUSTOMER CASCADE CONSTRAINTS;
@@ -161,6 +163,8 @@ INSERT ALL
     INTO CUSTOMER VALUES(1230,'J. Gordon Edwards',5,'닥터 스트레인지','특별관',to_date('11-27-2020','mm-dd-yyyy'),'15:20',13000,0)
 SELECT * FROM DUAL;
 
+COMMIT;
+
 -- ### MOVIEINFO ###
 
 DROP TABLE MOVIEINFO CASCADE CONSTRAINTS;
@@ -185,6 +189,8 @@ INSERT ALL
     INTO MOVIEINFO values(4,'어벤져스 2 : 에이지 오브 울트론','월트 디즈니 컴퍼니 코리아','로버트 다우니 주니어, 크리스 에반스, 스칼렛 요한슨 등','케빈 파이기','액션, 슈퍼히어로',12,13000,0,1405403694)
     INTO MOVIEINFO values(5,'닥터 스트레인지','월트 디즈니 컴퍼니 코리아', '베네딕트 컴버배치, 레이첼 맥아담스  등','케빈 파이기', '액션, 슈퍼히어로',12,13000,0,677718395)
 SELECT * FROM DUAL;
+
+COMMIT;
 
 -- ### BLAIRWITCH_SEAT ###
 
@@ -338,6 +344,8 @@ INSERT ALL
     INTO BLAIRWITCH_SEAT VALUES('C46',0,3,null)
 SELECT * FROM DUAL;
 
+COMMIT;
+
 -- ### MOVIE_REVIEW ###
 
 DROP TABLE MOVIE_REVIEW CASCADE CONSTRAINTS;
@@ -379,3 +387,5 @@ INSERT ALL
     INTO MOVIE_REVIEW VALUES(10024,5,'닥터 스트레인지',3.0,'건물이 왜곡되어 소서러들이 갈릴 때마다 아.. 저게 시각효과팀의 영혼이구나.')
     INTO MOVIE_REVIEW VALUES(10025,5,'닥터 스트레인지',3.5,'첫 스타트라 감질맛나게 보여줘서 아쉽지만 전작 이미지 탈피하고 캐릭터 완벽적응, 어벤져스 도입도 성공적이다. DOCTOR STRANGE WILL RETRUN.')
 SELECT * FROM DUAL;
+
+COMMIT;
